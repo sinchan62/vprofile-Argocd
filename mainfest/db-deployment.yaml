@@ -16,10 +16,6 @@ spec:
       containers:
         - name: vprodb
           image: vprofile/vprofiledb:latest
-          resources:
-            limits:
-              memory: "1Gi"
-              cpu: "500m"
           ports:
             - name: db-ports
               containerPort: 3306
